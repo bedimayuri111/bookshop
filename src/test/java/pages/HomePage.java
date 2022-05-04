@@ -10,7 +10,7 @@ public class HomePage
 {
 	//Locators of element as properties in page class
 	@FindBy (linkText= "Yes")
-	public WebElement agree;
+	public WebElement submit;
 	
 	@FindBy(name ="searchTerm")
 	protected WebElement serachbox;
@@ -24,7 +24,7 @@ public class HomePage
 	//Operations and observations methods
 	public void cliclkAgree() throws Exception
 	{
-		agree.click();
+		submit.click();
 		Thread.sleep(5000);
 	}
 	public void fillSearchboxAndClickEnter(String data) throws Exception
